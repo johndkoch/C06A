@@ -1,8 +1,10 @@
 
 public class Burner {
 
-	public Burner() {
-		
+	private String setting = "---";
+	
+	public Burner(String set) {
+		this.setting = set;
 	}
 	
 	public void plusButton() {
@@ -15,6 +17,11 @@ public class Burner {
 	
 	public void updateTemperature() {
 		
+	}
+	
+	@Override
+	public String toString() {
+		return setting;
 	}
 	
 }
